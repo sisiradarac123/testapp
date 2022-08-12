@@ -1,0 +1,10 @@
+<main *ngIf="testValues$ | async as testValues">
+
+    <div *ngFor="let testValues of testValues.items">
+        <h1>{{testValues.fields.name}}</h1>
+        <h2>{{testValues.fields.email}}</h2>
+
+    </div>
+
+   
+</main>
